@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pattern 1</title>
+</head>
+<body>
+    
+    <script>
+        var n=3;
+        char = '';
+        for(let i =0; i<n; i++){
+            value ="";
+            for(let j=0; j<n; j++){
+               char =char+(value+1);
+               value++;
+            }
+            
+            console.log(char);  
+            char='';
+        }
+    </script>
+</body>
+</html>
