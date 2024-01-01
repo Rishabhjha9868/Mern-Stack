@@ -1,0 +1,21 @@
+<!-- var mobJson='{"productId":1001,"product":{"name":"Moto","series":"G5+","color":"NightSky"},"price":14900,"category":"Electronics","shippingDetails":{"shipmentNo":"1DEL009","company":"Intel Marketing","receivedOn":"2018-6-19"},"seller":{"name":"xyz Mobile","location":"New York","stock":17}}'  -->
+  
+xyz Mobile shipped a Moto G5+ worth 14900 with productId: 1000.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    var mobJson='{"productId":1001,"product":{"name":"Moto","series":"G5+","color":"NightSky"},"price":14900,"category":"Electronics","shippingDetails":{"shipmentNo":"1DEL009","company":"Intel Marketing","receivedOn":"2018-6-19"},"seller":{"name":"xyz Mobile","location":"New York","stock":17}}'
+ 
+
+     var mobJsonio =JSON.parse(mobJson);
+     console.log(mobJsonio.seller.name + " shipped a"+ mobJsonio.product.name +" "+mobJsonio.product.series +" "+ "worth" +" "+ mobJsonio.price + " "+ "with productId: 1000");
+
+    </script>
+</body>
+</html>
