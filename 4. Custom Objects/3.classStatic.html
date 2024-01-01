@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+class Employee{
+    constructor(name, id, age){
+        this.name =name;
+        this.id= id;
+        this.age = age
+    }
+    swipeIn(){
+        console.log("Employee" + this.name +"has swipe in at"+ new Date());
+    }
+    static code(){
+        console.log("Employee is coding");
+    }
+}
+Employee.code()
+    </script>
+</body>
+</html>

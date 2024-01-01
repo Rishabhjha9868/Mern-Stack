@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="root">
+
+    </div>
+    <script>
+        class Employee{
+    constructor(id,name,age){
+        this.id=id;
+        this.name=name;
+        this.age=age;
+    }
+    swipeIn(){
+        console.log("Employee "+this.id+" has swiped in at "+new Date());
+    }
+    static code(){
+        console.log("Employee is coding");
+    }
+}
+class PartTimeEmployee extends Employee{
+    constructor(id,name,age,contractPeriod){
+        super(id,name,age);
+        this.contractPeriod=contractPeriod;
+    }
+}
+e1=new Employee(100,"Mark",23);
+e2= new PartTimeEmployee(101,"Jane",34,3);
+PartTimeEmployee.code();
+e2.swipeIn();
+document.getElementById("demo").innerHTML = e2.contractPeriod;
+
+    </script>
+</body>
+</html>
