@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+var json = '{ "firstName":"John", "lastName":"Doe"}';
+var nameObj = JSON.parse(json);           
+console.log(nameObj.firstName +" "+ nameObj.lastName);
+
+
+var jScores = { "Java": 70, "JavaScript": 80, "CSS": 30 };  
+var tScores = JSON.stringify(jScores);     
+console.log(typeof(jScores));                   
+console.log(typeof(tScores));                   
+    </script>
+</body>
+</html>
